@@ -4,14 +4,14 @@ var input = [
   { x: 8, y: 15 }
 ];
 
-var result = input.map(function (index) {
-  result = Math.sqrt(Math.pow(input[index].x,2) + Math.pow(input[index].y,2));
+var result = input.map(function (triangle) {
+  return Math.sqrt(Math.pow(triangle.x,2) + Math.pow(triangle.y,2));
 })
 
 // var result = input.map(function (obj) {
 //   result = Math.sqrt(Math.pow(obj.x,2) + Math.pow(obj.y,2));
 // });
-
+console.log(result)
 console.log(result[0] === 5);
 console.log(result[1] === 13);
 console.log(result[2] === 17);
